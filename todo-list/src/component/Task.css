@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  height: 1000px;
+}
+.task-col {
+  background-color: #1c1a41;
+  border-radius: 10px;
+}
+.task-col h1 {
+  color: #fff;
+  font-size: 35px;
+  font-style: italic;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.task-form input {
+  background-color: transparent;
+  border-radius: 0%;
+  padding: 10px;
+  border: 2px solid #5e44bb;
+  border-right: 0;
+  color: #5f5e7a;
+  font-size: 20px;
+  width: 400px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.task-form input:focus {
+  outline: none;
+}
+.task-button {
+  background-color: #8758fe;
+  border: none;
+  color: #fff;
+  padding: 11px;
+  width: 120px;
+  font-size: 20px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  position: relative;
+  z-index: 3;
+}
+.task-button:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  transition: 0.5s;
+  background-color: #1c1a41;
+  border: 2px solid #5e44bb;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+.task-button:hover::after {
+  width: 100%;
+}
+
+.task-list {
+  background-color: #5e44bb;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+.task-list p {
+  font-size: 20px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #fff;
+}
+.fa {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa:hover {
+  color: #000;
+}
